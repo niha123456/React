@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp">
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+        function MyfirstReact() {
+            return(
+                <h2>My First React Application </h2>
+            )
+        }
+        ReactDOM.render(<MyfirstReact></MyfirstReact> , document.getElementById("root"));
+    </script>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+</body>
+</html>
