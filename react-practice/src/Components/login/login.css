@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-form {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}

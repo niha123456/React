@@ -1,0 +1,10 @@
+.heading {
+    text-align: center;
+    padding: 10px;
+}
+.modal {
+    background-color: lightcoral;
+}
+.modal-dialog {
+    background-color: lightblue;
+}
