@@ -10,7 +10,7 @@ export function HookFrormDemo() {
         <div className="container">
             
            <form onSubmit={handleSubmit(submit)}>
-                <h3>User-Registration</h3>
+                <h3 className='bi bi-person-fill'>User-Registration</h3>
             <dl>
                     <dt>UserName</dt>
                     <dd><input type="text" name='userName' className='form-control' {...register("userName",{required:true,minLength:4})} /></dd>
@@ -21,10 +21,10 @@ export function HookFrormDemo() {
                         }
                     </dd>
                     <dt>Mobile</dt>
-                    <dd><input type="number" name='mobile' className='form-control' {...register("mobile",{required:true,pattern:/\+91\d{10}/})} /></dd>
+                    <dd><input type="string" name='mobile' className='form-control' {...register("mobile",{required:true,pattern:/\+91\d{10}/})} /></dd>
                     <dd className='text-danger'>
                         {
-                            (errors.mobile?.type==="required")?<span>Mobile Required</span>:<span></span>
+                            (errors.mobile?.type==="required")?<span>Mobile Required</span>:<span></span> && (errors.mobile?.type==="pattern")?<span>Invalid Mobile</span>:<span></span>
                         }
                     </dd>
                     <dt>Age</dt>
@@ -35,7 +35,7 @@ export function HookFrormDemo() {
                         }
                     </dd>
                 </dl>
-                <button type = "submit" className='btn btn-primary progress-bar-striped'>Register</button>
+                <button type = "submit" className='btn btn-primary progress-bar-striped progress-bar-striped-animated'>Register</button>
            </form>
         </div>
     )
