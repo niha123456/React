@@ -10,11 +10,14 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import * as bootstrap from "bootstrap";
 import { HookFrormDemo } from './Components/reacthookform/reacthookform';
+import { HookDemo } from './Components/hook-demo/hook-demo';
+import { CustomDate } from './Components/custom-date/custom-date';
+import { SortDataList } from './Components/sort-data/sort-data';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    < HookFrormDemo/>
+    < SortDataList/>
   </React.StrictMode>
 );
 
