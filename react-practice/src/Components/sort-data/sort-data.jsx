@@ -9,7 +9,7 @@ export function SortDataList() {
                <ol>
                 {
                         data.map(item=><li key={item}>{item}</li>)
-                    }
+                }
                </ol>
             </dd>
         </div>
