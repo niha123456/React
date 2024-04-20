@@ -15,7 +15,6 @@ export function Login()
     }
     return(
         <div className='container-fluid'>
-          <h3>Bootstrap in React JS</h3>
           <button data-bs-target = "#login" data-bs-toggle="modal" className='btn btn-primary'>Login</button>
           <div className='modal fade'id="login">
             <div className='modal-dialog modal-dialog-centered'>

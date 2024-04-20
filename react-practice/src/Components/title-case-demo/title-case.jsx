@@ -6,7 +6,7 @@ export function TitleCase() {
        <div>
             <h3>Title-Case Transformation</h3>
             {
-                <h2>{titleCase + "  "}</h2>
+                <h2>{titleCase}</h2>
             }
        </div>
     )
